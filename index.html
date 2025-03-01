@@ -10,7 +10,28 @@
 <body>
     <header>
         <div class="container">
-            <span class="header__menu-burguer container__image"></span>
+            <input type="checkbox" id="menu" class="container__button">
+            <label for="menu">
+                <span class="header__menu-burguer container__image"></span>
+            </label>
+            <ul class="list-menu">
+                <li class="list-menu__title">Categorias</li>
+                <li class="list-menu__item">
+                    <a href="#" class="list-menu__link">Programação</a>
+                </li>
+                <li class="list-menu__item">
+                    <a href="#" class="list-menu__link">Front-End</a>
+                </li>
+                <li class="list-menu__item">
+                    <a href="#" class="list-menu__link">Infraestrutura</a>
+                </li>
+                <li class="list-menu__item">    
+                    <a href="#" class="list-menu__link">Business</a>
+                </li>
+                <li class="list-menu__item">
+                    <a href="#" class="list-menu__link">Design & UX</a>
+                </li>
+            </ul>
             <img src="assets/Logo.svg" alt="Logo AluraBooks" class="container__image">  
         </div>
         <div class="container">
@@ -19,5 +40,10 @@
             <a href="#"><img src="assets/Usuario.svg" alt="User" class="container__image"></a>
         </div>
     </header>
+    <section class="banner">
+        <h2 class="banner__title">Já sabe por onde começar?</h2>
+        <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" name="" id="" class="banner__search" placeholder="Qual será sua próxima leitura?">
+    </section>
 </body>
 </html>

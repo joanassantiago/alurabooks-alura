@@ -3,11 +3,20 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container{
     display: flex;
     align-items: center;
+}
+
+.container__button{
+    display: none;
+}
+
+.container__button:checked ~ .list-menu{
+    display: block;
 }
 
 .container__image{
@@ -21,4 +30,30 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+}
+
+.list-menu{
+    display: none;
+    top: 100%;
+    position: absolute;
+    width: 60vw;
+}
+
+.list-menu__title,
+.list-menu__item{
+    padding: 1em;
+    background-color: var(--white);
+}
+
+.list-menu__title{
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.list-menu__link{
+    background: var(--blue-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
