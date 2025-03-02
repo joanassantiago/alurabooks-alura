@@ -23,6 +23,10 @@ header{
     padding: 1em;
 }
 
+.no-display{
+    display: none;
+}
+
 .header__menu-burguer{
     width: 36px;
     height: 24px;
@@ -56,4 +60,44 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px){
+
+    .container__title,
+    .container__title--bold{
+        font-family: var(--secondary-font);
+        font-size: 30px;
+    }
+
+    .container__title{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__title--bold{
+        font-weight: 700;
+    }
+
+    .options{
+        display: flex;
+    }
+
+    .options__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .option__link{
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .container__image-transparent{
+        display: none;
+    }
+
+    .header__menu-burguer{
+        display: none;
+    }
 }
