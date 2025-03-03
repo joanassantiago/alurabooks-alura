@@ -100,4 +100,13 @@ header{
     .header__menu-burguer{
         display: none;
     }
+
+    .options__button:checked ~ .list-menu{
+        display: block;
+        width: auto;
+    }
+
+    .options__button{
+        display: none;
+    }
 }
