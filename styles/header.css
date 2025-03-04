@@ -79,6 +79,10 @@ header{
         font-weight: 700;
     }
 
+    .container__text{
+        display: none;
+    }
+
     .options{
         display: flex;
     }
@@ -108,5 +112,26 @@ header{
 
     .options__button{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    header{
+        padding: 0 2em;
+    }
+
+    .options{
+        margin-right: auto;
+    }
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .container__text{
+        display: block;
     }
 }
