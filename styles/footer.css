@@ -11,6 +11,11 @@ footer{
     display: none;
 }
 
+.list-footer__link:hover{
+    color: var(--orange);
+    transition: 0.3s
+}
+
 @media screen and (min-width: 1024px) {
     footer{
         display: flex;
