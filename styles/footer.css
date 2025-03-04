@@ -27,6 +27,7 @@ footer{
 
     .list-footer__title{
         font-size: 14px;
+        text-transform: uppercase;
         color: var(--light-grey);
     }
 
@@ -40,5 +41,16 @@ footer{
         color: var(--grey);
         text-decoration: none;
         margin-left: 0.6em;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .list-footer{
+        border-left: 1px solid var(--light-grey);
+        padding-left: 1em;
+    }
+
+    footer{
+        padding: 3em 0;
     }
 }
